@@ -1,0 +1,39 @@
+{
+    "name": "castor/psr-io",
+    "description": "Psr StreamInterface adapters for Castor I/O interfaces",
+    "minimum-stability": "stable",
+    "license": "MIT",
+    "keywords": ["php", "io", "golang", "php7"],
+    "authors": [
+        {
+            "name": "Matias Navarro Carter",
+            "email": "mnavarrocarter@gmail.com"
+        }
+    ],
+    "config": {
+        "platform": {
+            "php": "7.4"
+        }
+    },
+    "require": {
+        "php": ">=7.4",
+        "psr/http-message": "^1.0",
+        "castor/io": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Castor\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Castor\\": "tests"
+        }
+    },
+    "require-dev": {
+        "roave/security-advisories": "dev-latest",
+        "friendsofphp/php-cs-fixer": "^3.0",
+        "phpunit/phpunit": "^9.5",
+        "vimeo/psalm": "^4.6"
+    }
+}
